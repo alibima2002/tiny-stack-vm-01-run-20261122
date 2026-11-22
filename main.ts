@@ -4,7 +4,7 @@
 // arithmetic (exact Math.imul), unsigned DIVU/MODU/LTU, INT_MIN/-1 division
 // and remainder, shifts masked to 5 bits, PUSH8 sign extension, EXIT's low
 // byte, and all ten traps with their own codes (2,3,4,5,6,7,8,9,10,11).
-// A trap keeps the output written before it.
+// Traps keep earlier output.
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
